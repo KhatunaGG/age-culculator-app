@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <title>age-culculator-app</title>
+  </head>
+  <body>
+    <main class="main">
+      <div class="container">
+        <form action="">
+          <div class="form__content">
+            <div class="form__item">
+              <label class="day__label" for="day">day</label>
+              <input id="day" type="text" class="form__input input__day" placeholder="DD" />
+              <small class="small bDay none">This field is required</small>
+            </div>
+            <div class="form__item">
+              <label for="month">month</label>
+              <input id="month" type="text" class="form__input input__month" placeholder="MM"  />
+              <small class="small bMonth none"
+                >This field is required</small
+              >
+            </div>
+            <div class="form__item">
+              <label for="year">year</label>
+              <input id="year" type="text" class="form__input input__year" placeholder="YYYY" />
+              <small class="small bYear none">This field is required</small>
+            </div>
+          </div>
+          <div class="arrow__box">
+            <hr />
+            <button class="btn">
+              <img class="arrwo__img" src="./img/arrow.png" alt="" />
+            </button>
+          </div>
+        </form>
+      </div>
+      <div class="output">
+        <div class="output__culc">
+          <div class="culc__number year__number">--</div>
+          <div class="culc__text text__year">years</div>
+        </div>
+        <div class="output__culc">
+          <div class="culc__number month__number">--</div>
+          <div class="culc__text text__month">months</div>
+        </div>
+        <div class="output__culc">
+          <div class="culc__number day__number">--</div>
+          <div class="culc__text text__day">days</div>
+        </div>
+      </div>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
